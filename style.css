@@ -1,0 +1,157 @@
+body {
+    background-color: #092328;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+hr {
+    width: 100%;
+    background-color: black;
+
+}
+.myButton {
+    display: block;
+    padding: 1px;
+    color: #2A835F;
+    background-color: #12544F;
+    height: 35px;
+    width: 150px;
+    float: right;
+    text-align: center;
+    top: 22px;
+    right: 9px;
+    position: fixed;
+}
+
+h1 {
+    color: #12544F;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 4fr 12fr 4fr 1fr;
+    background-color: #8BBB92;
+    padding: 5px;
+    gap: 5px;
+    text-align: start;
+}
+
+.container div {
+    background-color: #2A835F;
+    color: #0c3b37;
+    padding: 10px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.monthCalender {
+    display: grid;
+    grid-template-columns: repeat(7, 30px);
+    grid-template-rows: 30px;
+    gap: 30px;
+}
+
+.monthCalender div {
+    background-color: #8BBB92;
+    color: #0c3b37;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+
+.tickButton {
+    display: block;
+    height: 30px;
+    width: 30px;
+    padding: 0px;
+    background-color: #8BBB92;
+    border-style: solid;
+    border-color: #092328;
+
+}
+
+button {
+    padding: 15px;
+    background-color: #8BBB92;
+    border-color: #0c3b37;
+    border-radius: 20%;
+    border-width: 3px;
+    cursor: pointer;
+}
+
+.habit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.habit-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #2A835F;
+    align-items: center;
+    justify-content: space-between;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 4px;
+    border-color: #8BBB92;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 1;
+}
+
+.habit-name {
+    font-size: x-large;
+    color: #0c3b37;
+}
+
+.days-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    color: #092328;
+    width: 50%;
+    border: 2px;
+    border-style: solid;
+    border-color: #092328;
+    gap: 2px;
+    background-color: #8BBB92;
+}
+
+.day {
+    padding: 4px 10px;
+    border-right: 2px solid #092328;
+}
+
+.day:last-child {
+    border-right: none;
+}
+
+.days-streaker {
+    font-size: 12px;
+    font-weight: bold;
+    color: #0c3b37;
+}
+
+.completed {
+    background-color: #092328;
+}
+
+.add-habit {
+    display: flex;
+    color: #2A835F;
+    background-color: #12544F;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    padding-top:;
+    gap: 20px;
+}
