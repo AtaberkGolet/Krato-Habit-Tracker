@@ -66,8 +66,36 @@ function addHabitByList(list){
 
 }
 
+function addHabitfromLocalStorage(){
+    let container = document.querySelector(".habit-list")
+    let habitArray = JSON.parse(localStorage.getItem("habit"))
+    habitArray.forEach((card) => {
+        const cardHTML = `
+<div class="habit-card">
+    <span class="habit-name">${card.habit}</span>
+    <div class="days-container">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day">F</div>
+        <div class="day">S</div>
+    </div>
+    <p class="days-streaker">${card.daysStreak}</p>
+    <button id="button"></button>
+</div>
+`;
+        container.insertAdjacentHTML("beforeend", cardHTML)
+}
+)
+
+
+}
+
 
 
 addHabit(habitName, streakCount, container);
 addHabitByList(list);
 wda();
+addHabitfromLocalStorage();
