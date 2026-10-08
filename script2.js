@@ -2,7 +2,7 @@ const form = document.querySelector("form")
 const submitBtn = document.querySelector("#submitHabit");
 const habitName  = document.querySelector("#habitName");
 const streakCount = document.querySelector("#streakCount");
-const habitArray = []
+const habitArray = JSON.parse(localStorage.getItem("habit"))
 
 
 
