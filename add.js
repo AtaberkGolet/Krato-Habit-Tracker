@@ -14,5 +14,6 @@ submitBtn.addEventListener("click", () => {
     console.log(habitName.value)
     console.log(habit)
     Habit.addHabitToLocalStorage(habit,habitArray);
+    habitArray = JSON.parse(localStorage.getItem("habit"));
 });
 

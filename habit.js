@@ -1,10 +1,12 @@
 class Habit {
-    id = 0;
+    id = "";
     habitName;
-    completedDays = "";
+    completedDays = [];
 
     constructor(habitName) {
         this.habitName = habitName;
+        this.id = crypto.randomUUID();
+        
     }
 
     static addHabit(){
@@ -40,6 +42,7 @@ class Habit {
         } 
         catch (err) {
             if (err instanceof TypeError){
+                console.log("A")
                 habitArray = new Array();
                 habitArray.push(habit);
             }
