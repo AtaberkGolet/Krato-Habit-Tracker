@@ -6,7 +6,6 @@ class Habit {
     constructor(habitName) {
         this.habitName = habitName;
         this.id = crypto.randomUUID();
-        
     }
 
     static addHabit(){
@@ -17,7 +16,7 @@ class Habit {
         }
         habitArray.forEach((card) => {
         const cardHTML = `
-<div class="habit-card">
+<div class="habit-card" data-id="${card.id}">
     <span class="habit-name">${card.habitName}</span>
     <div class="days-container">
         <div class="day">S</div>
@@ -32,6 +31,7 @@ class Habit {
     <button class="button"></button>
 </div>
 `;
+            
         container.insertAdjacentHTML("beforeend", cardHTML)
     })
     }
